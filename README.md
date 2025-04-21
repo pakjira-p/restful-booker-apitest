@@ -1,2 +1,81 @@
-# restful-booker-apitest
-Restful-Booker API testing with Postman and Newman
+# Restful Booker API Testing
+
+This project demonstrates API testing of the [Restful Booker](https://restful-booker.herokuapp.com/apidoc/index.html) service using **Postman** and **Newman**. It replicates real-world QA workflows, covering core API functionalities through both positive and negative test scenarios.
+
+
+## 📚 Documentation (Google Docs & Sheets)
+
+- 📄 [Test Plan (Google Docs)](https://docs.google.com/document/d/xxxxxxxxx)  
+- 🧪 [Test Cases (Google Sheets)](https://docs.google.com/spreadsheets/d/xxxxxxxxx)  
+- 🐞 [Bug Report (Google Docs - Jira Export)](https://docs.google.com/document/d/xxxxxxxxx)  
+- ✅ [Test Report (Google Docs)](https://docs.google.com/document/d/xxxxxxxxx)
+
+See all Document: [Google Drive Folder](www.ggdrive.com)
+
+
+## 🧪 Test Scope Based on API Documentation
+
+Based on the official [Restful Booker API Docs](https://restful-booker.herokuapp.com/apidoc/index.html), the following endpoints were tested:
+
+### ✔️ Covered Endpoints:
+
+- `GET /ping` – Health check
+- `POST /auth` – Create token
+- `POST /booking` – Create booking
+- `GET /booking` – Retrieve all booking IDs
+- `GET /booking/:id` – Get booking by ID
+- `PUT /booking/:id` – Full update
+- `PATCH /booking/:id` – Partial update
+- `DELETE /booking/:id` – Delete booking
+
+### ❌ Out of Scope:
+
+- Rate limiting
+- Security testing (e.g., SQL Injection, XSS)
+- UI testing
+
+Each endpoint is tested with:
+- ✅ Positive cases
+- ❌ Negative cases (e.g., invalid input, missing auth)
+- 🔄 Edge cases (e.g., blank fields, invalid formats)
+
+
+
+## ▶️ How to Run Tests
+
+### 🛠️ Prerequisites:
+- Node.js installed → [https://nodejs.org](https://nodejs.org)
+- Newman installed:
+
+```bash
+npm install -g newman
+```
+
+### 🚀 Run the Collection with Newman:
+**Clone this repository:**
+```bash
+git clone https://github.com/pakjira-p/restful-booker-apitest.git
+```
+
+**Navigate into the project directory (optional, as this happens automatically after cloning):**
+```bash
+cd restful-booker-apitest
+```
+
+**Run the Postman Collection with Newman:**
+```bash
+newman run postman/RestfulBooker.postman_collection.json \
+  -e postman/RestfulBookerEnvironment.json \
+  -r cli,html \
+  --reporter-html-export newman/newman-report.html
+```
+The test report will be generated in: `newman/newman-report.html`
+
+
+
+## 🧰 Technologies
+
+- Postman – For designing, managing, and executing API tests manually
+- Newman – For automated CLI test runs and generating HTML reports
+- Jira – Bug tracking and issue reporting
+- Google Docs & Google Sheets – For documentation (test plan, bug report, test result)
