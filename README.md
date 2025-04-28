@@ -8,9 +8,9 @@ This project demonstrates API testing of the [Restful Booker](https://restful-bo
 ## 📚 Documentation (Google Docs & Sheets)
 
 - 📄 [Test Plan (Google Docs)](https://docs.google.com/document/d/15bG17DtPcGlUgFnoRv-gz661ET5lTHgHp6scHIH23KM/edit?usp=sharing)  
-- 🧪 [Test Cases (Google Sheets)](https://docs.google.com/spreadsheets/d/xxxxxxxxx)  
-- 🐞 [Bug Report (Google Docs - Jira Export)](https://docs.google.com/document/d/xxxxxxxxx)  
-- ✅ [Test Report (Google Docs)](https://docs.google.com/document/d/xxxxxxxxx)
+- 🧪 [Test Cases (Google Sheets)](https://docs.google.com/spreadsheets/d/1rgkqMiNbyS-y_8oi02MdqlcCmQ5bzZE02DrH_tRnVHA/edit?usp=sharing)  
+- 🐞 [Bug Report (pdf - Jira Export)](https://drive.google.com/file/d/1yADfFjnbzok0Eu13ZHsHmkVFukUX4Uje/view?usp=sharing)
+- ✅ [Test summary report (Google Docs)](https://docs.google.com/document/d/xxxxxxxxx)
 
 See all Document: [Google Drive Folder](https://drive.google.com/drive/folders/1MIoYLWYLvWcCG8JbQDNiMqnRIg7oxRv3?usp=sharing)
 
@@ -53,6 +53,11 @@ Each endpoint is tested with:
 npm install -g newman
 ```
 
+- newman-reporter-htmlextra installed:
+```bash
+npm install -g newman-reporter-htmlextra
+```
+
 ### 🚀 Run the Collection with Newman:
 **Clone this repository:**
 ```bash
@@ -66,10 +71,7 @@ cd restful-booker-apitest
 
 **Run the Postman Collection with Newman:**
 ```bash
-newman run postman/RestfulBooker.postman_collection.json \
-  -e postman/RestfulBookerEnvironment.json \
-  -r cli,html \
-  --reporter-html-export newman/newman-report.html
+newman run postman/RestfulBooker.postman_collection.json -e postman/Local.postman_environment.json -r htmlextra --reporter-htmlextra-export newman/newman-report.html
 ```
 The test report will be generated in: `newman/newman-report.html`
 
