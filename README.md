@@ -10,7 +10,7 @@ This project demonstrates API testing of the [Restful Booker](https://restful-bo
 - 📄 [Test Plan (Google Docs)](https://docs.google.com/document/d/15bG17DtPcGlUgFnoRv-gz661ET5lTHgHp6scHIH23KM/edit?usp=sharing)  
 - 🧪 [Test Cases (Google Sheets)](https://docs.google.com/spreadsheets/d/1rgkqMiNbyS-y_8oi02MdqlcCmQ5bzZE02DrH_tRnVHA/edit?usp=sharing)  
 - 🐞 [Bug Report (pdf - Jira Export)](https://drive.google.com/file/d/1yADfFjnbzok0Eu13ZHsHmkVFukUX4Uje/view?usp=sharing)
-- ✅ [Test summary report (Google Docs)](https://docs.google.com/document/d/xxxxxxxxx)
+- ✅ [Test summary report (Google Docs)](https://docs.google.com/document/d/1W4W9dBJad6wo3nSbC99AobTjrQgIiNjniXOK_bnWnIs/edit?usp=sharing)
 
 See all Document: [Google Drive Folder](https://drive.google.com/drive/folders/1MIoYLWYLvWcCG8JbQDNiMqnRIg7oxRv3?usp=sharing)
 
