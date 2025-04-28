@@ -2,8 +2,6 @@
 
 This project demonstrates API testing of the [Restful Booker](https://restful-booker.herokuapp.com/apidoc/index.html) service using **Postman** and **Newman**. It replicates real-world QA workflows, covering core API functionalities through both positive and negative test scenarios.
 
-🚧 This project is currently under development. Some parts may be incomplete or subject to change.
-
 
 ## 📚 Documentation (Google Docs & Sheets)
 
